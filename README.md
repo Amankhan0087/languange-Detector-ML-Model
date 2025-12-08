@@ -1,150 +1,83 @@
-Identify the language of any text using ML, NLP & Google Translate API
-<p align="center"> <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/NLP-Project-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/API-Google%20Translate-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" /> </p>
+🎯 Language Detection Model
 
+Identify the language of any text using Machine Learning, NLP, and Google Translate API
+
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/NLP-Project-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/API-Google%20Translate-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" /> </p>
 📌 Project Overview
 
-This project is a complete Machine Learning + Natural Language Processing (NLP) pipeline designed to detect the language of any given text input.
-It uses:
+This project predicts the language of any text input using:
 
-NLP preprocessing techniques
+NLP preprocessing
 
-Feature engineering (TF-IDF or CountVectorizer)
+TF-IDF vectorization
 
-Machine Learning classification model
+Multinomial Naive Bayes classifier
 
-Google Translate API for additional validation
+Google Translate API for dataset generation
 
-The model can successfully identify multiple languages, making it ideal for chatbots, translation tools, customer service automation, and AI applications.
+It’s lightweight, accurate, and perfect for ML & NLP beginners!
 
-🧠 Key Features
+📸 Project Preview
+<p align="center"> <img src="https://github.com/yourusername/yourrepo/blob/main/assets/preview.png" width="600"> </p>
 
-✔ Detect the language of any input text
-✔ End-to-end ML training process
-✔ NLP preprocessing pipeline
-✔ Dataset cleaning + feature extraction
-✔ Model evaluation + accuracy score
-✔ Google Translate API integration
-✔ Highly scalable & customizable
+(Replace the preview link with your actual screenshot path)
 
-🛠️ Tech Stack
-Category	Tools / Libraries
-Language	Python
-ML Library	Scikit-Learn
-NLP	NLTK / SpaCy / TF-IDF
-API	Google Translate (googletrans / googletrans==4.0.0-rc1)
-Notebook	Jupyter Notebook
-Visualization	Matplotlib & Seaborn
+🧠 Features
+
+✔ Predicts language from raw text
+✔ Trained on multilingual dataset
+✔ Clean preprocessing pipeline
+✔ Fast predictions
+✔ Easy to integrate in real apps
+
+🏗 Tech Stack
+Tool	Purpose
+Python 3.10	Programming language
+Scikit-Learn	ML model
+Pandas / NumPy	Data handling
+Google Translate API	Dataset creation
+Matplotlib / Seaborn	Visualizations
+🚀 How It Works
+
+1️⃣ Collect dataset using Google Translate API
+2️⃣ Clean + preprocess text
+3️⃣ Convert text using TF-IDF vectorization
+4️⃣ Train model using Naive Bayes
+5️⃣ Save + test predictions
+
+🧪 Example Prediction
+input_text = "Bonjour, comment allez-vous ?"
+model.predict([input_text])
+# Output: ['French']
 
 📂 Project Structure
-
-language-detection-project/
 │── data/
-│   └── dataset.csv
-│
 │── notebooks/
-│   └── Language_Detection.ipynb
-│
+│── model/
 │── src/
-│   ├── preprocessing.py
-│   ├── model_training.py
-│   ├── prediction.py
-│
+│   ├── preprocess.py
+│   ├── train.py
+│   └── predict.py
 │── README.md
 │── requirements.txt
-│── .gitignore
 
-
-🚀 How It Works
-1️⃣ Data Cleaning
-
-Remove punctuation
-
-Lowercase conversion
-
-Remove numbers
-
-Tokenization
-
-Stopword removal
-
-2️⃣ Feature Extraction
-
-TF-IDF Vectorization
-
-Converts text → numerical vectors
-
-3️⃣ Model Training
-
-Logistic Regression / Naive Bayes / SVM
-
-Trained on multilingual text samples
-
-4️⃣ Prediction Pipeline
-
-Input → Preprocessing → Vectorization → Model → Language Label
-
-5️⃣ External API Integration
-
-Google Translate API used to validate predictions or auto-translate text
-
-📊 Model Performance
-
-High accuracy (depending on dataset)
-
-Strong performance on short & long sentences
-
-Works across different writing styles
-
-Add your score like this:
-
-Accuracy Achieved: 94%
-Languages Supported: English, French, Spanish, German, Urdu, Hindi, Portuguese, Italian, etc.
-
-📸 Project Visuals
-
-You can add these once you upload the images:
-
-![NLP Pipeline](assets/nlp_pipeline.png)
-![Confusion Matrix](assets/confusion_matrix.png)
-![TF-IDF Visualization](assets/tfidf_plot.png)
-
-
-🧪 How to Run the Project
-1️⃣ Clone the Repository
-
-git clone https://github.com/YOUR-USERNAME/language-detection-project.git
-
-2️⃣ Install Dependencies
-
+📥 Installation
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
 pip install -r requirements.txt
 
-3️⃣ Open Notebook
+🏃 Run the Project
+python src/train.py
+python src/predict.py
 
-jupyter notebook
+📊 Training Results
 
-4️⃣ Run the Model
+(Add screenshots or accuracy graphs here)
 
-Inside the notebook:
+🤝 Contributing
 
-predict_language("Bonjour, comment allez-vous?")
+Pull requests are welcome!
 
-🌟 Future Improvements
+⭐ Support
 
-🔹 Add Deep Learning (LSTM / Transformers)
-🔹 Build a Streamlit web app for real-time language detection
-🔹 Deploy model as an API
-🔹 Add more languages
-🔹 Improve dataset diversity
-
-👨‍💻 Author
-
-Aman Khan
-Machine Learning • NLP • Data Science
-🔗 GitHub: https://github.com/Amankhan0087
-
-
-🔗 LinkedIn: https://www.linkedin.com/in/aman-khan-data-scientist/
-🤝 Contributions
-
-Contributions, issues, and feature requests are welcome!
-Feel free to ⭐ star the repo if you like it.
+If you like this project, give it a ⭐ on GitHub — it helps a lot!
