@@ -15,19 +15,23 @@ Multinomial Naive Bayes classifier
 
 Google Translate API for dataset generation
 
-It’s lightweight, accurate, and perfect for ML & NLP beginners!
+It’s lightweight, accurate, and perfect for ML & NLP beginners! 🚀
 
 📸 Project Preview
-<p align="center"> <img src="https://github.com/yourusername/yourrepo/blob/main/assets/preview.png" width="600"> </p>
+<p align="center"> <img src="assets/preview.png" width="600"> </p>
 
-(Replace the preview link with your actual screenshot path)
+Replace the above link with your screenshot path.
 
 🧠 Features
 
 ✔ Predicts language from raw text
-✔ Trained on multilingual dataset
+
+✔ Trained on a multilingual dataset
+
 ✔ Clean preprocessing pipeline
+
 ✔ Fast predictions
+
 ✔ Easy to integrate in real apps
 
 🏗 Tech Stack
@@ -65,19 +69,3 @@ model.predict([input_text])
 git clone https://github.com/yourusername/yourrepo.git
 cd yourrepo
 pip install -r requirements.txt
-
-🏃 Run the Project
-python src/train.py
-python src/predict.py
-
-📊 Training Results
-
-(Add screenshots or accuracy graphs here)
-
-🤝 Contributing
-
-Pull requests are welcome!
-
-⭐ Support
-
-If you like this project, give it a ⭐ on GitHub — it helps a lot!
